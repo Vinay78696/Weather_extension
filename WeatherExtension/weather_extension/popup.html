@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="cont">
+    <h1>Weather App</h1>
+    <div class="tab-container">
+      <button class="tab current-tab" id="yourWeatherTab">Your Weather</button>
+      <button class="tab" id="searchWeatherTab">Search Weather</button>
+    </div>
+    <div id="grantAccessContainer" class="sub-container active">
+      <p>Grant Location Access</p>
+      <button id="grantAccessButton">Grant Access</button>
+    </div>
+    <form id="searchForm" class="sub-container">
+      <input type="text" id="cityInput" placeholder="Search for a city">
+      <button type="submit">Search</button>
+    </form>
+    <div id="loadingContainer" class="sub-container">
+      <p>Loading...</p>
+    </div>
+    <div id="weatherInfoContainer" class="sub-container">
+      <p id="cityName"></p>
+      <p id="temperature"></p>
+      <p id="weatherDescription"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

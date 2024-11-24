@@ -1,0 +1,151 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 300px; /* Reduced width */
+  height: 200px; /* Reduced height */
+  background-color: #e3f2fd; /* Light blue background */
+  color: #1a237e; /* Darker blue text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for the extension */
+.cont {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  font-size: 18px;
+  color: #0d47a1; /* Dark blue header */
+  margin-bottom: 10px;
+}
+
+/* Tab navigation styling */
+.tab-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 5px;
+  background-color: #bbdefb; /* Light blue tabs */
+  color: #0d47a1; /* Dark blue text */
+  transition: background-color 0.3s;
+}
+
+.current-tab {
+  background-color: #0d47a1; /* Active tab color */
+  color: white;
+}
+
+.tab:hover {
+  background-color: #2196f3; /* Hover effect for tabs */
+  color: white;
+}
+
+/* Sub-container for different states */
+.sub-container {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+/* Grant access container styling */
+.grant-location-container img {
+  margin-bottom: 10px;
+}
+
+.grant-location-container button {
+  background-color: #1e88e5; /* Blue button */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.grant-location-container button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+}
+
+/* Loading container */
+.loading-container img {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Weather info container */
+.weather-info-container {
+  text-align: center;
+}
+
+.weather-info-container p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.parameter-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.parameter {
+  text-align: center;
+}
+
+.parameter img {
+  margin-bottom: 5px;
+}
+
+/* Search form styling */
+/* Search form styling */
+#searchForm {
+  display: none;
+  text-align: center;
+  margin-left: 1px;
+  margin-top: 10px;
+}
+
+#searchForm.active {
+  display: block;
+}
+
+input[type="text"] {
+  width: 70%; /* Adjusted width for better alignment */
+  padding: 6px;
+  font-size: 14px;
+  margin-right: 10px; /* Increased gap between input and button */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
